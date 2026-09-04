@@ -11,7 +11,7 @@ System.out.println("dup: "+arr[i]);
 }
 }
 void find_dup_set(int arr[]) {
-HashSet<Integer> s =new HashSet<>();
+HashSet<Integer> s=new HashSet<>();
 for(int x: arr)
 {
 if(s.add(x)==false){
