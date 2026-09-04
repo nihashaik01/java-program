@@ -7,6 +7,8 @@ int marks = sc.nextInt();
 
 System.out.println("The mark is" + marks);
 
+System.out.println("***RESULT***");
+
 if (marks>=50){
  System.out.println("PASS");
 }
