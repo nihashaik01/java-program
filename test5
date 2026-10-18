@@ -1,0 +1,16 @@
+class test5{
+public static void main(String args[]){
+ int x,y,z;
+ x = 5;
+ y = 6;
+ z = 7;
+
+ z = x+++y;
+ y = x + ++z;
+ x = z++ +y;
+ 
+System.out.println("x="+x);
+System.out.println("y="+y);
+System.out.println("z="+z);
+}
+}
