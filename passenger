@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Passenger {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String Passengername;
+        String Anotherpassengername;
+        String Ticketnumber;
+        System.out.println("Passenger Name :");
+        Passengername = sc.nextLine().trim();
+        System.out.println(" Another Passenger Name :");
+        Anotherpassengername = sc.nextLine().trim();
+        System.out.println("Ticket Number:");
+        Ticketnumber = sc.nextLine().trim();
+        String[] tn = Ticketnumber.split("-");
+        System.out.println("===BOARDING PASS===:");
+        System.out.println("Trimmed Name :" + Passengername);
+        System.out.println("Names Equal :" + Passengername.equals(Anotherpassengername));
+        System.out.println("Destination Code :" + tn[1]);
+        System.out.println("Starts with \"AI\": " + Ticketnumber.startsWith("AI"));
+
+    }
+}
