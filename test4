@@ -1,0 +1,9 @@
+class test4{
+ public static void main(String  args[]){
+ int main = 5;
+ int scanner = 7;
+ int s;
+ s = main + scanner;
+ System.out.println("s = " +s); 
+}
+}
