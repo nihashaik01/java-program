@@ -1,0 +1,83 @@
+import java.util.Scanner;
+
+public class ECommerceCartSystem {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int choice = 0;
+
+        do {
+            System.out.println("\nE-Commerce Cart System");
+            System.out.println("1. Add Product");
+            System.out.println("2. View Products");
+            System.out.println("3. Add Product to Cart");
+            System.out.println("4. Update/Remove Product from Cart");
+            System.out.println("5. Apply Discount Code");
+            System.out.println("6. Checkout");
+            System.out.println("7. Exit");
+            System.out.print("Enter your choice: ");
+
+            if (!sc.hasNextInt()) {
+                System.out.println(
+                    "Invalid input. Please enter a number from 1 to 7."
+                );
+                sc.next();
+                continue;
+            }
+
+            choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.println(
+                        "Add Product - Feature coming soon."
+                    );
+                    break;
+
+                case 2:
+                    System.out.println(
+                        "View Products - Feature coming soon."
+                    );
+                    break;
+
+                case 3:
+                    System.out.println(
+                        "Add Product to Cart - Feature coming soon."
+                    );
+                    break;
+
+                case 4:
+                    System.out.println(
+                        "Update/Remove Product from Cart - Feature coming soon."
+                    );
+                    break;
+
+                case 5:
+                    System.out.println(
+                        "Apply Discount Code - Feature coming soon."
+                    );
+                    break;
+
+                case 6:
+                    System.out.println(
+                        "Checkout - Feature coming soon."
+                    );
+                    break;
+
+                case 7:
+                    System.out.println(
+                        "Exiting E-Commerce Cart System. Goodbye!"
+                    );
+                    break;
+
+                default:
+                    System.out.println(
+                        "Invalid choice! Please select an option from 1 to 7."
+                    );
+            }
+
+        } while (choice != 7);
+
+        sc.close();
+    }
+}
